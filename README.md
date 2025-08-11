@@ -84,7 +84,5 @@ Other:
 ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
-
-![JUCE](https://img.shields.io/badge/JU-#8DC63F?style=for-the-badge&logo=juce&logoColor=white)
-
+<img src = "https://img.shields.io/badge/JUCE-8DC63F?style=for-the-badge&logo=juce&logoColor=white" >
 
