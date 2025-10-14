@@ -5,7 +5,7 @@
 
 <!-- Grafana Dashboard Integration -->
 <details>
-<summary><span style="font-size:1.5em;">Grafana Dashboard Integration</span></summary> 
+<summary><span style="font-size:1.5em;"> <strong>Grafana Dashboard Integration</strong></span></summary> 
 
 &#32;
 
