@@ -5,7 +5,7 @@
 
 <!-- Grafana Dashboard Integration -->
 <details>
-<summary><span style="font-size:1.5em;"> <strong>Grafana Dashboard Integration</strong></span></summary> 
+<summary><span style="font-size:1.5em;"> <b>Grafana Dashboard Integration</b></span></summary> 
 
 &#32;
 
@@ -18,7 +18,7 @@ Developed a lightweight client that fetched bug ticket data via REST API, stored
 
 <!-- Worklog -->
 <details>
-<summary><span style="font-size:1.5em;">Worklog</span></summary>
+<summary><span style="font-size:1.5em;"> <b>Worklog</b> </span></summary>
 
 &#32;
 
@@ -31,7 +31,7 @@ Created a module to automatically retrieve and process work-hour data through AP
 
 <!-- Custom Django Admin Extensions -->
 <details>
-<summary><span style="font-size:1.5em;">Custom Django Admin Extensions</span></summary>
+<summary><span style="font-size:1.5em;"> <b>Custom Django Admin Extensions</b></span></summary>
 
 &#32;
 
@@ -45,7 +45,7 @@ Built an advanced Django Admin interface with pagination, complex filters, and o
 
 <!-- Rapid FastAPI Web Apps -->
 <details>
-<summary><span style="font-size:1.5em;">Rapid FastAPI Web Apps</span></summary>
+<summary><span style="font-size:1.5em;"><b>Rapid FastAPI Web Apps</b></span></summary>
 
 &#32;
 
@@ -60,7 +60,7 @@ These included CRUD interfaces, batch file uploads/downloads, and DB integration
 
 <!-- Deployment & Infrastructure -->
 <details>
-<summary><span style="font-size:1.5em;">Deployment & Infrastructure </span></summary>
+<summary><span style="font-size:1.5em;"><b>Deployment & Infrastructure</b></span></summary>
 
 &#32;
 
@@ -74,7 +74,7 @@ Hands-on experience deploying services using Portainer, Docker Stacks, Kubernete
 
 <!-- Adoption System -->
 <details>
-<summary><span style="font-size:1.5em;">Adoption System</span></summary>
+<summary><span style="font-size:1.5em;"><b>Adoption System</b></span></summary>
 
 &#32;
 
@@ -87,7 +87,7 @@ Maintained and extended a Django-based adoption platform integrating GoPay and U
 
 <!-- TrackParse -->
 <details>
-<summary><span style="font-size:1.5em;">TrackParse</span></summary>
+<summary><span style="font-size:1.5em;"><b>TrackParse</b></span></summary>
 
 &#32;
 
@@ -100,7 +100,7 @@ Architected and implemented a modular PDF parsing engine for railway timetable d
 
 <!-- PDF Annotation Plugin For Nextcloud -->
 <details>
-<summary><span style="font-size:1.5em;"> PDF Annotation Plugin for Nextcloud</span></summary>
+<summary><span style="font-size:1.5em;"><b> PDF Annotation Plugin for Nextcloud</b></span></summary>
 
 &#32;
 
@@ -114,7 +114,7 @@ Developed a Nextcloud extension allowing users to upload, annotate, and save dra
 
 <!-- Zammad Ticket Management Portal -->
 <details>
-<summary><span style="font-size:1.5em;">Zammad Ticket Management Portal</span></summary>
+<summary><span style="font-size:1.5em;"><b>Zammad Ticket Management Portal</b></span></summary>
 
 &#32;
 
