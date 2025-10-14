@@ -3,6 +3,8 @@
 I’m an IT student specializing in **Back-End Development**, **DevOps**, and a touch of **Front-End**.  
 Below I keep an overview of the languages, frameworks, tools, and platforms I’ve worked with.
 
+👉 You can check out my **[project portfolio here](./projects.md)** for detailed examples of what I’ve built profesionally.
+
 ---
 
 ### 🖥️ Programming Languages
@@ -36,6 +38,7 @@ Below I keep an overview of the languages, frameworks, tools, and platforms I’
 ![UV](https://img.shields.io/badge/uv-DE5FE9?style=for-the-badge&logo=uv&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/sqlalchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![NumPy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
 
 #### **Java & .NET**
 ![ApacheMaven](https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
