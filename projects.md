@@ -118,9 +118,9 @@ Developed a Nextcloud extension allowing users to upload, annotate, and save dra
 
 &#32;
 
-Developed a full-stack application to streamline and automate Zammad workflows for management teams. It supports managing organizations and products, automates product-to-organization assignments, and provides per-organization ticket templates for faster and more consistent issue reporting.
+Designed and implemented a full-stack system integrating with Zammad to help agents efficiently manage organizations, products, and related ticket workflows. The application supports CRUD operations, ticket tracking and analytics, and enforces per-organization, product-specific ticket templates for faster and more consistent issue reporting.
 
-The project is structured for long-term scalability and maintainability. Core components are separated into dedicated modules for controllers, services, and models, following clear boundaries between business logic and data representation (DTOs vs ORM). The system includes factory methods and a fallback process to ensure reliable API communication and smooth recovery from transient Zammad API errors.
+The project is structured for long-term scalability and maintainability, with a modular architecture that cleanly separates application layers and responsibilities. It employs factory methods and a fallback process to ensure reliable API communication and smooth recovery from transient Zammad API errors.
 
 **Tech:** Python (Flask), Bootstrap, Zammad API, PostgreSQL, Docker
 </details>
