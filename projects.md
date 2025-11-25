@@ -1,7 +1,7 @@
 ## 🧰 Projects & Contributions
 
 
-*last updated: 14.10.2025*
+*last updated: 25.11.2025*
 
 <!-- Grafana Dashboard Integration -->
 <details>
@@ -126,5 +126,24 @@ The project is structured for long-term scalability and maintainability, with a 
 </details>
 
 &#32;
+
+
+---
+<!-- GitLab CI/CD Components-->
+
+<details>
+<summary><span style="font-size:1.5em;"><b>GitLab CI/CD Components</b></span></summary>
+
+&#32;
+
+Developed and maintained various reusable GitLab CI/CD pipeline components to enforce best practices and streamline deployment workflows. Key components include:
+* **Rootless Docker Image Builder:** Implemented a secure, rootless image building process utilizing **Kaniko**.
+* **Secret Detection:** Integrated a job using **GitLeaks** to prevent sensitive information from being committed to the repository.
+* **Container Image Scanning:** Established a scanning component to automatically check for vulnerabilities in built container images.
+
+**Tech:** GitLab CI/CD, Docker, Kaniko, GitLeaks, Container Scanners
+
+</details>
+
 
 [Back to main README](README.md)
