@@ -1,7 +1,7 @@
 ## 🧰 Projects & Contributions
 
 
-*last updated: 25.11.2025*
+*last updated: 9.12.2025*
 
 <!-- Grafana Dashboard Integration -->
 <details>
@@ -132,16 +132,17 @@ The project is structured for long-term scalability and maintainability, with a 
 <!-- GitLab CI/CD Components-->
 
 <details>
-<summary><span style="font-size:1.5em;"><b>GitLab CI/CD Components</b></span></summary>
+<summary><span style="font-size:1.5em;"><b>CI/CD Pipeline Architecture & DevSecOps</b></span></summary>
 
 &#32;
 
-Developed and maintained various reusable GitLab CI/CD pipeline components to enforce best practices and streamline deployment workflows. Key components include:
-* **Rootless Docker Image Builder:** Implemented a secure, rootless image building process utilizing **Kaniko**.
-* **Secret Detection:** Integrated a job using **GitLeaks** to prevent sensitive information from being committed to the repository.
-* **Container Image Scanning:** Established a scanning component to automatically check for vulnerabilities in built container images.
+Developed and maintained a library of reusable GitLab CI/CD components to enforce security gates and code quality standards. Key implementations include:
 
-**Tech:** GitLab CI/CD, Docker, Kaniko, GitLeaks, Container Scanners
+* **Gated Container Delivery:** Orchestrated a secure, rootless image build pipeline using Kaniko. Implemented an image promotion workflow where artifacts are scanned for vulnerabilities immediately after build; images are only promoted to the primary registry upon passing security checks, while failed builds are automatically purged.
+* **Advanced Secret Detection:** Hardened repository security by combining GitLeaks with TruffleHog for verified credential checking. Engineered custom rulesets to detect semantic patterns (e.g., DB_PASSWORD) alongside standard entropy checks.
+* **Python Quality & Security Suite:** Created a high-performance Python compliance track utilizing uv and Ruff. Enforces strict formatting, docstring standards, and class method ordering, combined with deep SAST analysis using Bandit and Semgrep.
+
+**Tech:** GitLab CI/CD, Docker, Kaniko, GitLeaks, Trufflehog, Ruff, uv, Bandit, Semgrep
 
 </details>
 
