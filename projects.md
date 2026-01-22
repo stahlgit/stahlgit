@@ -1,7 +1,7 @@
 ## 🧰 Projects & Contributions
 
 
-*last updated: 9.12.2025*
+*last updated: 22.1.2026*
 
 <!-- Grafana Dashboard Integration -->
 <details>
@@ -120,7 +120,10 @@ Developed a Nextcloud extension allowing users to upload, annotate, and save dra
 
 Designed and implemented a full-stack system integrating with Zammad to help agents efficiently manage organizations, products, and related ticket workflows. The application supports CRUD operations, ticket tracking and analytics, and enforces per-organization, product-specific ticket templates for faster and more consistent issue reporting.
 
-The project is structured for long-term scalability and maintainability, with a modular architecture that cleanly separates application layers and responsibilities. It employs factory methods and a fallback process to ensure reliable API communication and smooth recovery from transient Zammad API errors.
+The project is structured for long-term scalability and maintainability, with a modular architecture that cleanly separates application layers and responsibilities. It employs factory methods and a fallback process to ensure reliable API communication and smooth recovery from transient Zammad API errors. Architecture was also extended with dynamic background task registration, enabling new synchronization and processing jobs to be added without redeploying the core service.
+
+The system is actively used in production and has scaled beyond its original scope. It now serves as a stable integration layer for other in-house reporting tools, which consume its API instead of querying Zammad directly (adapter pattern). This decoupling allowed independent evolution of reporting use cases without increasing load or complexity in Zammad itself.
+
 
 **Tech:** Python (Flask), Bootstrap, Zammad API, PostgreSQL, Docker
 </details>
@@ -143,6 +146,20 @@ Developed and maintained a library of reusable GitLab CI/CD components to enforc
 * **Python Quality & Security Suite:** Created a high-performance Python compliance track utilizing uv and Ruff. Enforces strict formatting, docstring standards, and class method ordering, combined with deep SAST analysis using Bandit and Semgrep.
 
 **Tech:** GitLab CI/CD, Docker, Kaniko, GitLeaks, Trufflehog, Ruff, uv, Bandit, Semgrep
+
+</details>
+
+---
+<!-- WireGuard RustDesk-->
+
+<details>
+<summary><span style="font-size:1.5em;"><b>WireGuard RustDesk</b></span></summary>
+
+&#32;
+
+Deployed internal access and support tooling, including a WireGuard-based VPN with web-based administration and a self-hosted RustDesk instance for secure out-of-office remote usage. These services standardized internal access and reduced reliance on external third-party tools.
+
+**Tech:** WireGuard, RustDesk, Docker, Nginx
 
 </details>
 
