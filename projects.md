@@ -1,7 +1,7 @@
 ## 🧰 Projects & Contributions
 
 
-*last updated: 22.1.2026*
+*last updated: 28.1.2026*
 
 <!-- Grafana Dashboard Integration -->
 <details>
@@ -163,5 +163,21 @@ Deployed internal access and support tooling, including a WireGuard-based VPN wi
 
 </details>
 
+---
+
+<details>
+<summary><span style="font-size:1.5em;"><b>Zammad Metrics Exporter</b></span></summary>
+
+&#32;
+
+Built a lightweight FastAPI service exposing curated Zammad ticket metrics via HTTP JSON endpoints for use in dashboards and reporting tools (e.g. Grafana). Metrics are defined declaratively in a YAML file, with endpoints generated dynamically from configuration.
+
+The service supports hot-reloading of metric definitions and is secured using Bearer token authentication. By exposing read-only analytical endpoints instead of direct database access, it simplifies reporting workflows and avoids placing additional load or complexity on the Zammad application.
+
+Used in production as part of the Zammad reporting and monitoring stack.
+
+**Tech:** Python(FastAPI), PostgreSQL, YAML, Docker, Grafana
+
+</details>
 
 [Back to main README](README.md)
