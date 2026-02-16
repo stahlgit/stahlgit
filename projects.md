@@ -1,7 +1,7 @@
 ## 🧰 Projects & Contributions
 
 
-*last updated: 28.1.2026*
+*last updated: 16.2.2026*
 
 <!-- Grafana Dashboard Integration -->
 <details>
@@ -124,8 +124,11 @@ The project is structured for long-term scalability and maintainability, with a 
 
 The system is actively used in production and has scaled beyond its original scope. It now serves as a stable integration layer for other in-house reporting tools, which consume its API instead of querying Zammad directly (adapter pattern). This decoupling allowed independent evolution of reporting use cases without increasing load or complexity in Zammad itself.
 
+As the system scaled, the architecture was evolved into separate web and worker services sharing a common codebase, with behavior controlled via environment variables. Background processing is handled using Dramatiq with Redis as the message broker, enabling reliable async job execution and horizontal scaling of workers independently from the web layer.
 
-**Tech:** Python (Flask), Bootstrap, Zammad API, PostgreSQL, Docker
+For improved observability and faster incident detection, centralized logging was introduced using Promtail and Loki, providing structured log aggregation across web and worker components.
+
+**Tech:** Python (Flask), Bootstrap, Zammad API, PostgreSQL, Docker, Dramatiq, Redis, Promtail, Loki 
 </details>
 
 &#32;
@@ -164,7 +167,7 @@ Deployed internal access and support tooling, including a WireGuard-based VPN wi
 </details>
 
 ---
-
+<!-- Zammad Metrics Exporter -->
 <details>
 <summary><span style="font-size:1.5em;"><b>Zammad Metrics Exporter</b></span></summary>
 

@@ -26,6 +26,7 @@ def get_user_input():
 def format_entry(name, description, tech):
     # This matches the specific HTML/Markdown mix from your file
     return f"""---
+<!-- {name} -->
 
 <details>
 <summary><span style="font-size:1.5em;"><b>{name}</b></span></summary>
