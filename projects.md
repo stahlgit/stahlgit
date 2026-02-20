@@ -1,7 +1,7 @@
 ## 🧰 Projects & Contributions
 
 
-*last updated: 16.2.2026*
+*last updated: 20.2.2026*
 
 <!-- Grafana Dashboard Integration -->
 <details>
@@ -118,15 +118,16 @@ Developed a Nextcloud extension allowing users to upload, annotate, and save dra
 
 &#32;
 
-Designed and implemented a full-stack system integrating with Zammad to help agents efficiently manage organizations, products, and related ticket workflows. The application supports CRUD operations, ticket tracking and analytics, and enforces per-organization, product-specific ticket templates for faster and more consistent issue reporting.
+Designed and implemented a production system integrating with Zammad to manage organizations, products, and ticket workflows. The platform enforces per-organization product visibility and standardized ticket submission, helping agents receive cleaner and more structured reports.
 
-The project is structured for long-term scalability and maintainability, with a modular architecture that cleanly separates application layers and responsibilities. It employs factory methods and a fallback process to ensure reliable API communication and smooth recovery from transient Zammad API errors. Architecture was also extended with dynamic background task registration, enabling new synchronization and processing jobs to be added without redeploying the core service.
+The project has been actively maintained and evolved over time. As usage grew, the architecture was refactored from a single application into a **distributed monolith within a monorepo**, splitting responsibilities into web, worker, and scheduler services that share a common core package. This reduced container sizes, simplified service operation, and made the system easier to extend and maintain. Architecture was also extended with dynamic background task registration, enabling new synchronization and processing jobs to be added without redeploying the core service.
 
-The system is actively used in production and has scaled beyond its original scope. It now serves as a stable integration layer for other in-house reporting tools, which consume its API instead of querying Zammad directly (adapter pattern). This decoupling allowed independent evolution of reporting use cases without increasing load or complexity in Zammad itself.
+Asynchronous processing was introduced to keep the web layer responsive while delegating heavier operations—such as ticket processing and synchronization—to background workers.
 
-As the system scaled, the architecture was evolved into separate web and worker services sharing a common codebase, with behavior controlled via environment variables. Background processing is handled using Dramatiq with Redis as the message broker, enabling reliable async job execution and horizontal scaling of workers independently from the web layer.
+Structured logging and centralized log aggregation were later added using Promtail and Loki, improving observability and incident investigation across services.
 
-For improved observability and faster incident detection, centralized logging was introduced using Promtail and Loki, providing structured log aggregation across web and worker components.
+The application now acts as a stable integration layer for internal systems, decoupling reporting and automation workflows from the core ticketing platform while keeping Zammad as the source of truth.
+
 
 **Tech:** Python (Flask), Bootstrap, Zammad API, PostgreSQL, Docker, Dramatiq, Redis, Promtail, Loki 
 </details>
