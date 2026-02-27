@@ -1,7 +1,7 @@
 ## 🧰 Projects & Contributions
 
 
-*last updated: 16.2.2026*
+*last updated: 27.2.2026*
 
 <!-- Grafana Dashboard Integration -->
 <details>
@@ -181,6 +181,23 @@ Used in production as part of the Zammad reporting and monitoring stack.
 
 **Tech:** Python(FastAPI), PostgreSQL, YAML, Docker, Grafana
 
+</details>
+
+---
+<details>
+<summary><span style="font-size:1.5em;"><b>Observability Stack Evaluation & Architecture</b></span></summary>
+
+&#32;
+
+Designed and built monitoring testbed to evaluate and select a scalable observability architecture for multi-server production environment. 
+
+Conducted research into various telemetry and logging pipelines (OpenTelemetry, Vector, Fluent Bit, Jaeger, ELK stack, ...) before building a testbed to directly compare the Grafana Labs ecosystem (Prometheus, Loki, Promtail, Tempo, Mimir) against the VictoriaMetrics ecosystem.
+
+**Current Progress:** Settled on the **VictoriaMetrics stack** (VictoriaMetrics, VictoriaLogs, VictoriaTraces) for the backend, projecting the data into a Grafana UI utilizing Prometheus APIs, the VictoriaLogs datasource, and Jaeger UI. 
+
+Future production rollout plans include implementing robust security layers, with active research into M2M Keycloak authentication and mTLS.
+
+**Tech:** Grafana, VictoriaMetrics, VictoriaLogs, VictoriaTraces, Prometheus, Loki, Promtail, Tempo, Mimir, Kubernetes
 </details>
 
 [Back to main README](README.md)
