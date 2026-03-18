@@ -190,15 +190,22 @@ Used in production as part of the Zammad reporting and monitoring stack.
 
 &#32;
 
-Designed and built monitoring testbed to evaluate and select a scalable observability architecture for multi-server production environment. 
+Implemented **federated multi-cluster observability platform** for metrics, logs, and traces using the VictoriaMetrics ecosystem and Grafana.
 
-Conducted research into various telemetry and logging pipelines (OpenTelemetry, Vector, Fluent Bit, Jaeger, ELK stack, ...) before building a testbed to directly compare the Grafana Labs ecosystem (Prometheus, Loki, Promtail, Tempo, Mimir) against the VictoriaMetrics ecosystem.
+The architecture uses a **local-first approach**, where each cluster maintains its own observability stack, while a central cluster aggregates data for cross-cluster dashboards and long-term storage.
 
-**Current Progress:** Settled on the **VictoriaMetrics stack** (VictoriaMetrics, VictoriaLogs, VictoriaTraces) for the backend, projecting the data into a Grafana UI utilizing Prometheus APIs, the VictoriaLogs datasource, and Jaeger UI. 
+Implemented **signal-specific data pipelines**:
 
-Future production rollout plans include implementing robust security layers, with active research into M2M Keycloak authentication and mTLS.
+* metrics via federation (vmagent)
+* logs via forwarding (vlagent)
+* traces via OpenTelemetry fan-out
 
-**Tech:** Grafana, VictoriaMetrics, VictoriaLogs, VictoriaTraces, Prometheus, Loki, Promtail, Tempo, Mimir, Kubernetes
+Built a **modular Helm-based deployment** (LocalStack, Replication, Agents, Central) with environment-specific configurations (prod vs dev), selective replication, and retention strategies.
+
+Designed with **security and scalability in mind**, including vmauth as an access layer, network policies, mTLS, and ongoing Keycloak integration.
+
+**Tech:** Kubernetes, Helm, VictoriaMetrics, VictoriaLogs, VictoriaTraces, OpenTelemetry, Grafana
+
 </details>
 
 [Back to main README](README.md)
