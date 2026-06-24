@@ -208,4 +208,18 @@ Designed with **security and scalability in mind**, including vmauth as an acces
 
 </details>
 
+---
+<details>
+<summary><span style="font-size:1.5em;"><b>Certificate Generation Microservice</b></span></summary>
+
+&#32;
+
+Developed a C# backend service to securely aggregate user data and generate dynamic PDF certificates. Architected the data orchestration layer to fetch cross-service data via gRPC, secured via Keycloak and JWT authentication. Implemented a highly customizable HTML-to-PDF rendering pipeline using Scriban templating and PuppeteerSharp (Chromium).
+
+
+**Tech:** C#, .NET, gRPC, Keycloak, JWT, Scriban, PuppeteerSharp, Entity Framework (Multi-tenant DB), Docker
+</details>
+
+---
+
 [Back to main README](README.md)
