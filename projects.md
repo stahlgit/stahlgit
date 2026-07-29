@@ -185,6 +185,7 @@ Used in production as part of the Zammad reporting and monitoring stack.
 </details>
 
 ---
+<!-- Observability Stack Evaluation & Architecture -->
 <details>
 <summary><span style="font-size:1.5em;"><b>Observability Stack Evaluation & Architecture</b></span></summary>
 
@@ -209,6 +210,7 @@ Designed with **security and scalability in mind**, including vmauth as an acces
 </details>
 
 ---
+<!-- Certificate Generation Microservice -->
 <details>
 <summary><span style="font-size:1.5em;"><b>Certificate Generation Microservice</b></span></summary>
 
@@ -221,5 +223,20 @@ Developed a C# backend service to securely aggregate user data and generate dyna
 </details>
 
 ---
+<!-- Worklog 3.0 -->
+<details>
+<summary><span style="font-size:1.5em;"><b>Worklog 3.0</b></span></summary>
+
+&#32;
+
+Led a ground-up revival of an internal HR/worklog Django application, moving it from an ad-hoc collection of scripts to a maintainable platform with a proper layered architecture. Migrated tooling to uv with ruff linting/formatting and mypy type checking enforced in CI, and introduced a core layer (domain exceptions, role-based permissions, global exception-handling middleware) alongside a services layer that separates business logic from views.
+
+Built a role-based access system (Employee / Project Manager / Backoffice / HR) enforced via Django Groups, and implemented a full invoice approval workflow with per-project PM delegation, approval notifications, and cancellation handling.
+
+Added an attendance module (models, filtering, daily/total hour aggregation, CSV export) alongside automated PDF report generation and batch email digests for pending approvals.
+
+**Tech:** Python, Django, PostgreSQL, HTMX, Weasyprint, xlsxwriter, uv, Ruff, mypy
+
+</details>
 
 [Back to main README](README.md)
