@@ -1,7 +1,7 @@
 ## 🧰 Projects & Contributions
 
 
-*last updated: 27.2.2026*
+*last updated: 6.9.2026*
 
 <!-- Grafana Dashboard Integration -->
 <details>
@@ -229,13 +229,12 @@ Developed a C# backend service to securely aggregate user data and generate dyna
 
 &#32;
 
-Led a ground-up revival of an internal HR/worklog Django application, moving it from an ad-hoc collection of scripts to a maintainable platform with a proper layered architecture. Migrated tooling to uv with ruff linting/formatting and mypy type checking enforced in CI, and introduced a core layer (domain exceptions, role-based permissions, global exception-handling middleware) alongside a services layer that separates business logic from views.
+Led the ground-up revival of an internal HR/worklog Django application, transforming an ad-hoc collection of scripts into a maintainable platform with layered architecture, role-based access control, and automated workflows.
 
-Built a role-based access system (Employee / Project Manager / Backoffice / HR) enforced via Django Groups, and implemented a full invoice approval workflow with per-project PM delegation, approval notifications, and cancellation handling.
+Expanded the platform with integrated TimeCamp attendance tracking, anomaly detection, invoice and project approval workflows, automated PDF reporting, email notifications, and scheduled compliance checks. Introduced modern development tooling and CI-enforced quality and type-safety standards, alongside secure handling of sensitive report data.
 
-Added an attendance module (models, filtering, daily/total hour aggregation, CSV export) alongside automated PDF report generation and batch email digests for pending approvals.
+**Tech:** Python, Django, PostgreSQL, HTMX, Weasyprint, xlsxwriter, TimeCamp API, Cryptography, Supercronic, uv, Ruff, mypy
 
-**Tech:** Python, Django, PostgreSQL, HTMX, Weasyprint, xlsxwriter, uv, Ruff, mypy
 
 </details>
 
