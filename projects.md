@@ -1,7 +1,7 @@
 ## 🧰 Projects & Contributions
 
 
-*last updated: 6.9.2026*
+*last updated: 20.9.2026*
 
 <!-- Grafana Dashboard Integration -->
 <details>
@@ -235,6 +235,21 @@ Expanded the platform with integrated TimeCamp attendance tracking, anomaly dete
 
 **Tech:** Python, Django, PostgreSQL, HTMX, Weasyprint, xlsxwriter, TimeCamp API, Cryptography, Supercronic, uv, Ruff, mypy
 
+
+</details>
+
+---
+<!-- BATS - Applicant Tracking System -->
+<details>
+<summary><span style="font-size:1.5em;"><b>BATS — Applicant Tracking System</b></span></summary>
+
+&#32;
+
+Designed and builded an internal Applicant Tracking System from the ground up, modelling the full recruitment lifecycle across three core entities—candidates, positions, and applications—with a persistent talent pool, GDPR-compliant consent tracking with automatic expiry, and full-text and tag-based search.
+
+Implemented Keycloak-based authentication with role-based access (admin, recruiter, read-only manager), alongside a passwordless share-link flow that lets external hiring managers review candidates and leave feedback without a Keycloak account. File attachments are handled through a generic storage abstraction backed by Garage (S3-compatible), and background jobs such as GDPR anonymisation and notifications run via Quartz.NET. Deployed to Kubernetes alongside PostgreSQL, Keycloak, and Garage.
+
+**Tech:** C# (.NET, ASP.NET Core, EF Core), Vue 3, Vite, NaiveUI, PostgreSQL, Keycloak, Garage (S3), Quartz.NET, Docker, Kubernetes
 
 </details>
 
